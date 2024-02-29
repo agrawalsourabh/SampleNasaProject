@@ -27,12 +27,12 @@ function useLaunches(onSuccessSound, onAbortSound, onFailureSound) {
     const mission = data.get("mission-name");
     const rocket = data.get("rocket-name");
     const target = data.get("planets-selector");
-    const response = await httpSubmitLaunch({
-      launchDate,
-      mission,
-      rocket,
-      target,
-    });
+    // const response = await httpSubmitLaunch({
+    //   launchDate,
+    //   mission,
+    //   rocket,
+    //   target,
+    // });
 
     // TODO: Set success based on response.
     const success = false;
@@ -48,7 +48,7 @@ function useLaunches(onSuccessSound, onAbortSound, onFailureSound) {
   }, [getLaunches, onSuccessSound, onFailureSound]);
 
   const abortLaunch = useCallback(async (id) => {
-    const response = await httpAbortLaunch(id);
+    // const response = await httpAbortLaunch(id);
 
     // TODO: Set success based on response.
     const success = false;
