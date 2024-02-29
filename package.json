@@ -1,18 +1,17 @@
 {
-  "name": "server",
+  "name": "samplenasaproject",
   "version": "1.0.0",
   "description": "",
-  "main": "src/server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/server.js"
+    "build": "npm run build --prefix client",
+    "deploy": "npm run build && npm start --prefix server"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
-    "csv-parse": "^5.5.5",
-    "express": "^4.18.2"
+    "morgan": "^1.10.0"
   }
 }
